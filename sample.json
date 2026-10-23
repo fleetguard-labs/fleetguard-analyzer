@@ -1,0 +1,81 @@
+{
+  "snapshot": {
+    "schemaVersion": 1,
+    "network": "testnet",
+    "ledger": 100,
+    "managers": [
+      {
+        "id": "manager-demo",
+        "tag": "stable",
+        "wasmHash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "administrator": "admin-demo"
+      }
+    ],
+    "instances": [
+      {
+        "id": "instance-1",
+        "owner": "manager-demo",
+        "tag": "stable"
+      },
+      {
+        "id": "instance-2",
+        "owner": "manager-demo",
+        "tag": "stable"
+      },
+      {
+        "id": "instance-3",
+        "owner": "manager-demo",
+        "tag": "stable"
+      }
+    ],
+    "provenance": {
+      "source": "synthetic",
+      "atomic": false
+    }
+  },
+  "proposal": {
+    "owner": "manager-demo",
+    "tag": "stable",
+    "expectedHash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "nextHash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "readyLedger": 102
+  },
+  "beforeInterface": [
+    {
+      "name": "value",
+      "inputs": [],
+      "output": "i128"
+    },
+    {
+      "name": "version",
+      "inputs": [],
+      "output": "u32"
+    },
+    {
+      "name": "add",
+      "inputs": [
+        "i128"
+      ],
+      "output": "i128"
+    }
+  ],
+  "afterInterface": [
+    {
+      "name": "value",
+      "inputs": [],
+      "output": "i128"
+    },
+    {
+      "name": "version",
+      "inputs": [],
+      "output": "u32"
+    },
+    {
+      "name": "add",
+      "inputs": [
+        "i128"
+      ],
+      "output": "i128"
+    }
+  ]
+}
