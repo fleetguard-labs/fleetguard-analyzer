@@ -26,7 +26,7 @@ Open http://127.0.0.1:4350; API binds 127.0.0.1:4351. Use the synthetic sample, 
 
 ## Verification
 
-Run npm test in analyzer, backend, frontend and fixtures. In contracts, run cargo test --locked (committed fixture Wasms support the host integration test). Run ./build.sh to rebuild manager and v1/v2 Wasms using Stellar CLI; compiled artifacts go to ignored build/. Backend TESTNET.md explains evidence replay and live verification.
+Run npm test in analyzer, backend, frontend and fixtures. In contracts, run cargo test --locked (committed fixture Wasms support the host integration test). Run sh ./build.sh to rebuild manager and v1/v2 Wasms using Stellar CLI; compiled artifacts go to ignored build/. Backend TESTNET.md explains evidence replay and live verification.
 
 ## Trust and limitations
 
